@@ -21,7 +21,7 @@ export default Button;
 const StyledButton = styled.div`
   button {
     position: absolute;
-    right: 0.6em;
+    right: 0.1em;
     top: 0;
     padding: 5px;
     display: flex;

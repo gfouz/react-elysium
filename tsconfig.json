@@ -21,9 +21,13 @@
     "noEmit": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "~/*": ["src/*"]
+      "/*": ["src/*"],
+      "src/*": ["./src/*"],
+      "com/*": ["./src/routes/common/*"],
+      "components/*": ["./src/components/*"],
+      "icons/*": ["./src/routes/icons/*"],
     }
   },
   "include": ["vite.config.ts", "**/*.ts", "**/*.tsx"],

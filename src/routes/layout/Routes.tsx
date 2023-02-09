@@ -30,4 +30,9 @@ export const Routes: IRoutesProps[] = [
     icon: <Blog color='#ffffff' />,
     link: <a href='https://gfouz.github.io/next-blog-2023'>Blog</a>,
   },
+  {
+    path: '/curriculum',
+    icon: <FileSearch color='#ffffff' />,
+    link: <Link to='/curriculum'>Curriculum</Link>,
+  },
 ];

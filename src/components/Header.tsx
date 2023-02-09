@@ -7,10 +7,11 @@ interface IHeader {
 
 export const Header = styled.header`
   grid-area: header;
-  padding: 1em;
+  width: 100%;
+  padding: 1em 0;
   text-align: center;
   color: ${(props: IHeader) => props.color || '#fff4a3'};
-  background-color: ${(props: IHeader) => props.bg || '#000000'};
+  background-color: ${(props: IHeader) => props.bg || '#333333'};
   letter-spacing: 5px;
   font-weight: bolder;
   text-transform: uppercase;

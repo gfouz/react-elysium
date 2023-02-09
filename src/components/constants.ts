@@ -25,4 +25,3 @@ export interface ISvgProps {
   height?: string;
   color?: string;
 }
-

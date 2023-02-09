@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 
 import { Header } from './Header';
 import { Footer } from './Footer';
-import { Aside }  from './Aside';
+import { Aside } from './Aside';
 import Sidebar from './Sidebar';
 import Button from './Button';
 import { IRoutesProps } from './constants';

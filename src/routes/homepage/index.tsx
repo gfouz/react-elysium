@@ -1,58 +1,58 @@
 import styled from 'styled-components';
-import { switcher } from '../../components/store';
-import { useSnapshot } from 'valtio';
-import { Header } from '../../components/Header';
-import { Footer } from '../../components/Footer';
-import { Aside }  from '../../components/Aside';
-import Sidebar from '../../components/Sidebar';
-import Button from '../../components/Button';
-import SpyGlass from '../icons/SpyGlass';
-import GitAlt from '../icons/GitAlt';
-import Youtube from '../icons/Youtube';
-import { Headline } from '../common/Headline';
-import { Routes } from '../layout/Routes';
 import Marquee from 'react-fast-marquee';
+import { useSnapshot } from 'valtio';
+
+import { switcher } from 'components/store';
+import { Header } from 'components/Header';
+import { Footer } from 'components/Footer';
+import { Aside } from 'components/Aside';
+import Sidebar from 'components/Sidebar';
+import Button from 'components/Button';
+import { Headline } from 'components/Headline';
+import Typewriter from 'components/Typewriter';
+
+import SpyGlass from 'icons/SpyGlass';
+import GitAlt from 'icons/GitAlt';
+import Youtube from 'icons/Youtube';
+
+import { Routes } from '../layout/Routes';
 import { attached_1, attached_2, attached_3 } from './constant';
-import Typewriter  from '../common/Typewriter';
+
 
 export default function Homepage() {
   const snap2 = useSnapshot(switcher);
   const { st, reverse } = snap2;
   return (
     <HomeContainer>
+      <Header bg='#2a160f' color='#c2c5aa'>
+        gfouz-{new Date().getFullYear()}
+        <Button st={st} reverse={reverse} />
+      </Header>
 
-       <Header bg='#2a160f' color='#c2c5aa'>
-          gfouz portfolio
-          <Button st={st} reverse={reverse} />
-       </Header>
-
-       <HomepageMain>
-        
+      <HomepageMain>
         <PictureContainer>
-        <Headline center bolder size='2.7em' color='#451a23'>
+          <Headline center bolder size='2.7em' color='#451a23'>
             <MainTitle>Hello world !</MainTitle>
-        </Headline>
+          </Headline>
           <MainPicture />
-        <Headline size='1.3em' center color='#451a23' bolder spacing='5px' fontfam='signika'>
-          <Typewriter 
-           color='#451a23'
-           text='Fullstack developer' 
-          />
-        </Headline>  
-        <SelfReminder>
-          <p>"{attached_3}"</p> 
-        </SelfReminder>
-        
+          <Headline size='1.3em' center color='#451a23' bolder spacing='5px' fontfam='signika'>
+            <Typewriter color='#451a23' text='Fullstack developer' />
+          </Headline>
+          <SelfReminder>
+            <p>"{attached_3}"</p>
+          </SelfReminder>
         </PictureContainer>
-        
 
         <LogoContainer>
           <SpyGlass fontSize='40px' color='#451a23' />
         </LogoContainer>
         <SecondaryPictureContainer>
-         <SecondaryPicture />
+          <SecondaryPicture />
         </SecondaryPictureContainer>
-        <Headline center bolder upper p='2em 0'>Technologies</Headline>
+
+        <Headline center bolder upper p='2em 0'>
+          Technologies
+        </Headline>
         <Marquee>
           <Headline bolder color='#451a23' spacing='6px' upper fontfam='signika'>
             ReactJS styled-components valtio react-query react-hook-form axios eslint prettier
@@ -62,30 +62,28 @@ export default function Homepage() {
       </HomepageMain>
 
       <Aside bg='#d3bb72'>
-         <ProfileCard>
-            <Headline upper >Overview</Headline>
-            <p> {attached_1} </p>
-          </ProfileCard>
-          <RemoteLinks>
-             <YoutubeLink>
-                  YouTube Channel
-                  <Youtube fontSize='30px' color='#c40550' />
-             </YoutubeLink>
-             <GithubLink>
-                 Github Projects
-                 <GitAlt fontSize='30px' color='#222222' />
-             </GithubLink>
-          </RemoteLinks>
-          <ProfileCard>
-            <p> {attached_2} </p>
-          </ProfileCard>
-          
-      </Aside>  
-      <Sidebar options={ Routes } />
-      <Footer bg='#2a160f' color='#c2c5aa' >
-           Portfolio &copy; {new Date().getFullYear()}
-      </Footer> 
-
+        <ProfileCard>
+          <Headline upper>Overview</Headline>
+          <p> {attached_1} </p>
+        </ProfileCard>
+        <RemoteLinks>
+          <YoutubeLink>
+            YouTube Channel
+            <Youtube fontSize='30px' color='#c40550' />
+          </YoutubeLink>
+          <GithubLink>
+            Github Projects
+            <GitAlt fontSize='30px' color='#222222' />
+          </GithubLink>
+        </RemoteLinks>
+        <ProfileCard>
+          <p> {attached_2} </p>
+        </ProfileCard>
+      </Aside>
+      <Sidebar options={Routes} />
+      <Footer bg='#2a160f' color='#c2c5aa'>
+        Portfolio &copy; {new Date().getFullYear()}
+      </Footer>
     </HomeContainer>
   );
 }
@@ -117,7 +115,6 @@ const HomeContainer = styled.div`
   }
 `;
 const HomepageMain = styled.main`
-  
   grid-area: main;
   display: flex;
   flex-direction: column;
@@ -128,22 +125,21 @@ const MainTitle = styled.h1`
   top: 20px;
   font-family: signika;
 `;
-const PictureContainer = styled.div`
-
-`;
+const PictureContainer = styled.div``;
 const SecondaryPictureContainer = styled.div`
- width: 100%;
- background-color: #020203;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #020203;
 `;
 const MainPicture = styled.img.attrs({ src: './images/homepage.jpg', alt: 'knightman' })`
   margin: 0 auto;
   max-width: 100%;
   height: auto;
 `;
-const SecondaryPicture = styled.img.attrs({ src: './images/second.jpg', alt: 'second'})`
- margin: 0 auto;
- max-width: 100%;
- height: auto;
+const SecondaryPicture = styled.img.attrs({ src: './images/second.jpg', alt: 'second' })`
+  max-width: 100%;
+  height: auto;
 `;
 const ProfileCard = styled.div`
   text-align: left;
@@ -169,23 +165,26 @@ const RemoteLinks = styled.div`
   font-family: signika;
   background-color: #ffffff;
 `;
-const YoutubeLink = styled.a.attrs({ href:'https://youtube.com/@giovanifouz5033'})`
- margin: 0 1em;
- color: #c40550;
- font-weight: bolder;
+const YoutubeLink = styled.a.attrs({ href: 'https://youtube.com/@giovanifouz5033' })`
+  margin: 0 1em;
+  color: #c40550;
+  font-weight: bolder;
 `;
-const GithubLink = styled.a.attrs({ href: 'https://github.com/gfouz'})`
- margin: 0 1em;
- font-weight: bolder;
+const GithubLink = styled.a.attrs({ href: 'https://github.com/gfouz' })`
+  margin: 0 1em;
+  font-weight: bolder;
 `;
 const SelfReminder = styled.div`
- font-weight: bolder;
- font-family: signika;
+  font-weight: bolder;
+  font-family: signika;
 `;
 /*const Line = styled.div`
   width: 100%;
   height: 1px;
   background-color: #222222;
-`;*/
+`;
+ <Document file={samplePDF}>
+          <Page pageNumber={1} />
+ </Document>
+*/
 //https://gfouz.github.io/next-blog-2023
-

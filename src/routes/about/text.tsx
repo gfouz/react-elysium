@@ -7,14 +7,14 @@ related libraries to afford security and functionality like Bcrypt and
 jsonwebtoken besides very useful concepts to reuse logic as for
 example middlewares, I enjoy to write code using these technologies.`;
 
-export const second_text = `A friend of mind suggested me to study Vue in the beginning of
-2021 and i accepted to do it, but after some months i was not so
-convinced to use it because in my opinion i had found a better and more
-explicit way to represent ui interfaces and i am talking about React.
-I  soon  realized  of the great advantages that React offered me and
-i still hold that opinion until now. Among my favorite libraries specially
-made for react are react-query, react-hook-form, valtio for state
-management, styled-components and others...`;
+export const second_text = `trabajé en la primera fase de un sistema para generar certificados
+digitales para Segurmática que es la empresa de seguridad informática
+en Cuba, participe en la creación o abstracción de la base de datos en
+este caso relacional utilizando PostgreSQL y Sequelize como ORM. Asi
+como también diseñé la Rest Api de rutas y controladores con Express y
+Node. Utilice a React para crear el front end o representación del
+lado del cliente o navegador, este sistema tiene gran importancia para
+el desarrollo de la certificación digital en Cuba.`;
 
 export const third_text = `I've been writing css code for over three years. I have always asked
 myself about the good practices and how I could make my code more
@@ -31,3 +31,13 @@ read great books and articles besides most of the content on the
 internet is written in English. And it is the international language
 of media and science. I can read, write or pronounce this beautiful
 tongue with no much effort. it is a pleasure to do it.`;
+
+export const second_spanish = `trabajé en la primera fase de un sistema para generar certificados
+digitales para Segurmática que es la empresa de seguridad informática
+en Cuba, participe en la creación o abstracción de la base de datos en
+este caso relacional utilizando PostgreSQL y Sequelize como ORM. Asi
+como también diseñé la Rest Api de rutas y controladores con Express y
+Node. Utilice a React para crear el front end o representación del
+lado del cliente o navegador, este sistema tiene gran importancia para
+el desarrollo de la certificación digital en Cuba.`;
+

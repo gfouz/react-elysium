@@ -13,20 +13,21 @@ export const skills: string[] = [
   'Service-focused',
 ];
 
-export const experience: string = `Front-end developer- 09/2021 up to 10/2021
+export const experience: string = `<p><span style="color:#34a45c;font-weight: bolder">Front-end developer:</span> 
+09/2021 up to 10/2021
 DreamSolution: Mexico https://dreamsolutionsco.com
-tel: +52 222 434 7574 .
-Fullstack developer – 03/2022 up to 2/2023.
+tel: +52 222 434 7574 .</p>
+<p><span style="color:#34a45c; font-weight: bolder">Fullstack developer: </span>03/2022 up to 2/2023.
 CUANTICO:
 Calle 253. Esq. 94, No. 9218. La Cumbre,San Miguel del Padrón, La
 Habana.
-tel: 54695264, 52392484, cuanticohtv@gmail.com`;
+tel: 54695264, 52392484, cuanticohtv@gmail.com </p>`;
 
 export const education: string = `Pre-university level.
-English language: self taught advanced level.
-Self taught Knowledge about electronics and c++.`;
+<p>English language: self taught advanced level.</p>
+<p>Self taught Knowledge about electronics and c++.</p>`;
 
 export const technologies: string = `I currently use react-query, react-hook-form, zustang, valtio,
 react-router-dom, and for css in js the popular styled-components.
 Back-end: Express and ORM to abstract data bases.
-Github projects: https://github.com/gfouz`;
+<p><strong>Projects: </strong><a src="https://github.com/gfouz">https://github.com/gfouz</a></p>`;

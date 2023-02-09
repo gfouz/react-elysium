@@ -1,12 +1,14 @@
 import styled, { keyframes } from 'styled-components';
-import Layout from '../layout/Layout';
-import { Headline } from '../common/Headline';
-import Suggestions from '../common/Suggestion';
-import SpyGlass from '../icons/SpyGlass';
+
+import { RowArranged } from 'components/Containers';
+import { Headline } from 'components/Headline';
+import Suggestions from 'components/Suggestion';
+import WebLink from 'components/Link';
+import SpyGlass from 'icons/SpyGlass';
 import { Routes } from '../layout/Routes';
-import WebLink from '../common/Link';
+import Layout from '../layout/Layout';
 import { project, attached } from './constants';
-import { RowArranged } from '../common/Containers';
+
 
 //const tip = 'You may see my source code on Github!';
 const tip2 = 'Here i show some technologies i currently use each day';

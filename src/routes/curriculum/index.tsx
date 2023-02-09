@@ -36,34 +36,34 @@ function Curriculum() {
         <PictureContainer>
           <MainPicture />
         </PictureContainer>
-        <Headline upper bolder mt>
+        <Subtitle upper bolder mt>
           Overview
-        </Headline>
-        <Es6LiteralString dangerouslySetInnerHTML={{__html: overview}} ></Es6LiteralString>
-        <Headline upper bolder mt>
+        </Subtitle>
+        <Es6LiteralString dangerouslySetInnerHTML={{ __html: overview }} />
+        <Subtitle upper bolder mt>
           skills hightlights
-        </Headline>
+        </Subtitle>
         <SummaryList>
-          {skills.map((skill) => (
-            <li>{skill}</li>
+          {skills.map(( skill, index ) => (
+            <li key={ index }>{ skill }</li>
           ))}
         </SummaryList>
-        <Headline upper bolder mt>
+        <Subtitle upper bolder mt>
           experience
-        </Headline>
-        <SummaryParagraph>{experience}</SummaryParagraph>
-        <Headline upper bolder mt>
+        </Subtitle>
+        <Es6LiteralString dangerouslySetInnerHTML={{ __html: experience }} />
+        <Subtitle upper bolder mt>
           EDUCATION OR OTHER SKILLS
-        </Headline>
-        <SummaryParagraph>{education}</SummaryParagraph>
-        <Headline upper bolder mt>
+        </Subtitle>
+        <Es6LiteralString dangerouslySetInnerHTML={{ __html: education }}/>
+        <Subtitle upper bolder mt>
           LIBRARIES OR TECHNOLOGIES
-        </Headline>
-        <SummaryParagraph>{technologies}</SummaryParagraph>
+        </Subtitle>
+        <Es6LiteralString dangerouslySetInnerHTML={{ __html: technologies }} />
         <div>
-          <Headline upper bolder center mt>
-            Click on below button to download PDF file
-          </Headline>
+          <Subtitle upper bolder center mt>
+            Click button to download PDF file
+          </Subtitle>
           <ButtonsContainer>
           <DownloadButton onClick={onButtonClick}>Download PDF</DownloadButton>
           <CancelButton onClick={CancelhandleClick}>Cancel</CancelButton>
@@ -95,15 +95,14 @@ const SummaryContainer = styled.div`
 `;
 const SummaryHeader = styled(Header)``;
 const SummaryMain = styled.div`
-  padding: 1em;
 `;
 const SummaryParagraph = styled.p`
+  padding: 0 0.5em;
   text-align: left;
-  font-size: 1.1em;
 `;
 const Es6LiteralString = styled.div`
+  padding: 0 0.5em;
   text-align: left;
-  font-size: 1.1em;
   a {
     font-family: signika;
     color: #008394;
@@ -111,6 +110,9 @@ const Es6LiteralString = styled.div`
      color: #ff0000;
     }
   }
+`;
+const Subtitle = styled( Headline )`
+  padding: 0.5em;
 `;
 const PictureContainer = styled.div`
   position: relative;
@@ -123,7 +125,7 @@ const MainPicture = styled.img.attrs({ src: './images/gfouzcoffee.jpg', alt: 'gf
   height: auto;
 `;
 const SummaryList = styled.ol`
-  padding: 0 1em;
+  padding: 0 1.5em;
   display: flex;
   text-align: left;
   flex-direction: column;
@@ -142,7 +144,7 @@ const CancelButton = styled(OneButton)`
 `;
 /*
 npm init @eslint/config
-
 npm install eslint-config-airbnb-typescript --save-dev
+https://gfouz.github.io/react-elysium/
 
 */

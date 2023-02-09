@@ -1,15 +1,19 @@
 import styled from 'styled-components';
 import Layout from '../layout/Layout';
-import { Headline } from '../common/Headline';
 import { Routes } from '../layout/Routes';
-import Text from '../common/Highlighter';
-import NodeIcon from '../icons/Node';
-import NpmIcon from '../icons/Npm';
-import HtmlIcon from '../icons/Html';
-import CssIcon from '../icons/Css';
-import ReactIcon from '../icons/ReactIcon';
+
+import Text from 'components/Highlighter';
+import { Headline } from 'components/Headline';
+import { RowArranged } from 'components/Containers';
+
+import NodeIcon from 'icons/Node';
+import NpmIcon from 'icons/Npm';
+import HtmlIcon from 'icons/Html';
+import CssIcon from 'icons/Css';
+import ReactIcon from 'icons/ReactIcon';
+
 import { first_text, second_text, third_text, fourth_text } from './text';
-import { RowArranged } from '../common/Containers';
+
 
 function About() {
   return (

@@ -36,10 +36,10 @@ function About() {
             </Paragraph>
             <Paragraph>
               <Headline color='#444444' bolder>
-                I found something really nice.
+                A bit of my work.
               </Headline>
               <img className='article__avatar' src='./images/boldman.jpg' alt='emoji' />
-              <p>{second_text}</p>
+              <Es6LiteralString dangerouslySetInnerHTML={{ __html: second_text }} />
             </Paragraph>
           </ParagraphSection>
           <SecondaryArticle>
@@ -94,6 +94,17 @@ const ParagraphSection = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+`;
+const Es6LiteralString = styled.div`
+  padding: 0 0.5em;
+  text-align: left;
+  a {
+    font-family: signika;
+    color: #008394;
+    &:hover {
+     color: #ff0000;
+    }
+  }
 `;
 const Paragraph = styled.div`
   width: 450px;

@@ -30,3 +30,23 @@ styled-components and the popular react-router-dom.`;
 
 export const attached_3 = `Tell me and I will forget, show me and I may
  remenber, involve me and I will understand`;
+
+export const experience = `I worked in the first phase of a system to generate digital 
+certificates for Segurmática which is the information security company in Cuba, 
+I participated in the creation or abstraction of the database in this case relational 
+using PostgreSQL and Sequelize as ORM. As well as designed the Rest Api of routes and 
+controllers with Express and Node. Use React to create the front end or the representation 
+of the client or browser side, this system has great importance for the development 
+of digital certification in Cuba.<p>(PKI) project: <a src="https://github.com/gfouz/pki-server-2023">
+https://github.com/gfouz/pki-server-2023</a></p>`; 
+
+export const attached_1_spanish = `Hola, mi nombre es Giovani, comencé a aprender C++ en 2017 y fue mi
+Primera experiencia con placas Arduino. Pero era una especie de
+hobby hasta el año 2019 que comencé a estudiar programación web con un
+mejor propósito en mente. Así que Node js fue mi elección, he estado
+estudiar marcos de back-end como Express y bibliotecas relacionadas para
+brindar seguridad y funcionalidad, además de conceptos muy útiles para
+reutilizar lógica como middlewares y he tenido experiencia trabajando con
+ORM u ODM para bases de datos abstractas como Sequelize o Mongoose. Tengo
+bases de datos diseñadas y resumidas para un sistema que permitirá PKI
+servicios en Cuba. `;

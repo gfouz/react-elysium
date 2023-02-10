@@ -29,10 +29,11 @@
 }
 
 @font-face {
-  font-family: 'orangina';
-  src: local('orangina'), url('./fonts/orangina.otf') format('opentype');
-  font-weight: bolder;
-}
+    font-family: 'signika';
+    src: local('signika'), url('./fonts/signika.ttf') format('truetype');
+    font-weight: bolder;
+    font-display: block;
+  }
 
 a {
   font-weight: 500;

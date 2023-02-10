@@ -151,6 +151,17 @@ const Card = styled.div`
   border-radius: 10px;
   box-shadow: 5px 5px 15px #000000;
 `;
+const Es6LiteralString = styled.div`
+  padding: 0 0.5em;
+  text-align: left;
+  a {
+    font-family: signika;
+    color: #008394;
+    &:hover {
+     color: #ff0000;
+    }
+  }
+`;
 const Paragraph = styled(Headline)`
   color: #999999;
 `;

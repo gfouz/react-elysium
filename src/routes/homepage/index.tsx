@@ -16,7 +16,7 @@ import GitAlt from 'icons/GitAlt';
 import Youtube from 'icons/Youtube';
 
 import { Routes } from '../layout/Routes';
-import { attached_1, attached_2, attached_3 } from './constant';
+import { attached_1, attached_2, attached_3, experience } from './constant';
 
 
 export default function Homepage() {
@@ -79,6 +79,10 @@ export default function Homepage() {
         <ProfileCard>
           <p> {attached_2} </p>
         </ProfileCard>
+        <Headline center bolder>PKI System</Headline>
+        <ProfileCard>
+        <Es6LiteralString dangerouslySetInnerHTML={{ __html: experience }} />
+        </ProfileCard>
       </Aside>
       <Sidebar options={Routes} />
       <Footer bg='#2a160f' color='#c2c5aa'>
@@ -124,6 +128,16 @@ const MainTitle = styled.h1`
   position: relative;
   top: 20px;
   font-family: signika;
+`;
+const Es6LiteralString = styled.p`
+  text-align: left;
+  a {
+    font-family: signika;
+    color: #008394;
+    &:hover {
+     color: #ff0000;
+    }
+  }
 `;
 const PictureContainer = styled.div``;
 const SecondaryPictureContainer = styled.div`

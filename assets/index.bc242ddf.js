@@ -1,4 +1,4 @@
-var f=Object.defineProperty,p=Object.defineProperties;var b=Object.getOwnPropertyDescriptors;var d=Object.getOwnPropertySymbols;var w=Object.prototype.hasOwnProperty,v=Object.prototype.propertyIsEnumerable;var m=(e,a,r)=>a in e?f(e,a,{enumerable:!0,configurable:!0,writable:!0,value:r}):e[a]=r,c=(e,a)=>{for(var r in a||(a={}))w.call(a,r)&&m(e,r,a[r]);if(d)for(var r of d(a))v.call(a,r)&&m(e,r,a[r]);return e},g=(e,a)=>p(e,b(a));import{s as n,j as t,r as o,F as y,a as i}from"./index.fa221f71.js";import{L as x,R as h}from"./Containers.990760a5.js";import{R as z}from"./Routes.2e21f2d3.js";import{H as l}from"./Headline.50dc6f90.js";const j=e=>t(k,g(c({},e),{children:e.children})),k=n.span`
+var f=Object.defineProperty,p=Object.defineProperties;var b=Object.getOwnPropertyDescriptors;var d=Object.getOwnPropertySymbols;var w=Object.prototype.hasOwnProperty,v=Object.prototype.propertyIsEnumerable;var m=(e,a,r)=>a in e?f(e,a,{enumerable:!0,configurable:!0,writable:!0,value:r}):e[a]=r,c=(e,a)=>{for(var r in a||(a={}))w.call(a,r)&&m(e,r,a[r]);if(d)for(var r of d(a))v.call(a,r)&&m(e,r,a[r]);return e},g=(e,a)=>p(e,b(a));import{s as n,j as t,r as o,F as y,a as i}from"./index.c1fb2b18.js";import{L as x,R as h}from"./Containers.57901051.js";import{R as z}from"./Routes.ae8a7942.js";import{H as l}from"./Headline.26743018.js";const j=e=>t(k,g(c({},e),{children:e.children})),k=n.span`
   color: ${e=>e.color||"#888888"};
   margin: ${e=>e.m};
   font-size: ${e=>e.size};
@@ -18,7 +18,7 @@ I participated in the creation or abstraction of the database in this case relat
 using PostgreSQL and Sequelize as ORM. As well as designed the Rest Api of routes and 
 controllers with Express and Node. Use React to create the front end or the representation 
 of the client or browser side, this system has great importance for the development 
-of digital certification in Cuba.<p>(PKI) project: <a src="https://github.com/gfouz/pki-server-2023">
+of digital certification in Cuba.<p>(PKI) project: <a href="https://github.com/gfouz/pki-server-2023">
 https://github.com/gfouz/pki-server-2023</a></p>`,S=`I've been writing css code for over three years. I have always asked
 myself about the good practices and how I could make my code more
 readable, understandable, easy to maintain and to be handled by other

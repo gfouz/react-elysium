@@ -1,22 +1,12 @@
-import{s as e,C as o}from"./index.b8eef1ee.js";const i=e.header`
-  grid-area: header;
-  width: 100%;
-  padding: 1em 0;
-  text-align: center;
-  color: ${t=>t.color||"#fff4a3"};
-  background-color: ${t=>t.bg||"#333333"};
-  letter-spacing: 5px;
-  font-weight: bolder;
-  text-transform: uppercase;
-`,r=o`
+import{C as o,s as e}from"./index.9541e34d.js";const i=o`
   position: absolute;
   bottom: 1em;
-`,a=o`
+`,n=o`
   position: static;
-`,l=e.div`
+`,a=e.div`
   width: 100%;
   cursor: pointer;
-  ${t=>t.bottom?r:a};
+  ${t=>t.bottom?i:n};
   color: ${t=>t.color};
   margin-left: ${t=>t.ml};
   margin-top: ${t=>t.mt?"1em":"0"};
@@ -30,4 +20,4 @@ import{s as e,C as o}from"./index.b8eef1ee.js";const i=e.header`
   font-style: ${t=>t.italic?"italic":"normal"};
   text-transform: ${t=>t.upper&&"uppercase"};
   }
-`;export{i as H,l as a};
+`;export{a as H};

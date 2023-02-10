@@ -96,10 +96,6 @@ const SummaryContainer = styled.div`
 const SummaryHeader = styled(Header)``;
 const SummaryMain = styled.div`
 `;
-const SummaryParagraph = styled.p`
-  padding: 0 0.5em;
-  text-align: left;
-`;
 const Es6LiteralString = styled.div`
   padding: 0 0.5em;
   text-align: left;

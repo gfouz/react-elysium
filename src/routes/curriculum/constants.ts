@@ -30,4 +30,4 @@ export const education: string = `Pre-university level.
 export const technologies: string = `I currently use react-query, react-hook-form, zustang, valtio,
 react-router-dom, and for css in js the popular styled-components.
 Back-end: Express and ORM to abstract data bases.
-<p><strong>Projects: </strong><a src="https://github.com/gfouz">https://github.com/gfouz</a></p>`;
+<p><strong>Projects: </strong><a href="https://github.com/gfouz">https://github.com/gfouz</a></p>`;

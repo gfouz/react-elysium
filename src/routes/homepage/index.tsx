@@ -18,7 +18,6 @@ import Youtube from 'icons/Youtube';
 import { Routes } from '../layout/Routes';
 import { attached_1, attached_2, attached_3, experience } from './constant';
 
-
 export default function Homepage() {
   const snap2 = useSnapshot(switcher);
   const { st, reverse } = snap2;
@@ -36,7 +35,7 @@ export default function Homepage() {
           </Headline>
           <MainPicture />
           <Headline size='1.3em' center color='#451a23' bolder spacing='5px' fontfam='signika'>
-            <Typewriter color='#451a23' text='Fullstack developer' />
+            <Typewriter color='#451a23' text='Fullstack development' />
           </Headline>
           <SelfReminder>
             <p>"{attached_3}"</p>
@@ -79,9 +78,11 @@ export default function Homepage() {
         <ProfileCard>
           <p> {attached_2} </p>
         </ProfileCard>
-        <Headline center bolder>PKI System</Headline>
+        <Headline center bolder>
+          PKI System
+        </Headline>
         <ProfileCard>
-        <Es6LiteralString dangerouslySetInnerHTML={{ __html: experience }} />
+          <Es6LiteralString dangerouslySetInnerHTML={{ __html: experience }} />
         </ProfileCard>
       </Aside>
       <Sidebar options={Routes} />
@@ -135,7 +136,7 @@ const Es6LiteralString = styled.p`
     font-family: signika;
     color: #008394;
     &:hover {
-     color: #ff0000;
+      color: #ff0000;
     }
   }
 `;
@@ -146,7 +147,7 @@ const SecondaryPictureContainer = styled.div`
   justify-content: center;
   background-color: #020203;
 `;
-const MainPicture = styled.img.attrs({ src: './images/homepage.jpg', alt: 'knightman' })`
+const MainPicture = styled.img.attrs({ src: './images/prog.png', alt: 'knightman' })`
   margin: 0 auto;
   max-width: 100%;
   height: auto;

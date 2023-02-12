@@ -29,11 +29,11 @@
 }
 
 @font-face {
-    font-family: 'signika';
-    src: local('signika'), url('./fonts/signika.ttf') format('truetype');
-    font-weight: bolder;
-    font-display: block;
-  }
+  font-family: 'signika';
+  src: local('signika'), url('./fonts/signika.ttf') format('truetype');
+  font-weight: bolder;
+  font-display: block;
+}
 
 a {
   font-weight: 500;

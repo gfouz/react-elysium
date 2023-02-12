@@ -31,3 +31,17 @@ export const technologies: string = `I currently use react-query, react-hook-for
 react-router-dom, and for css in js the popular styled-components.
 Back-end: Express and ORM to abstract data bases.
 <p><strong>Projects: </strong><a href="https://github.com/gfouz">https://github.com/gfouz</a></p>`;
+
+export function fetchPdf( ) {
+  fetch('fouzsummary.pdf').then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'fouzsummary.pdf';
+        alink.click();
+      });
+    });
+  };
+
+

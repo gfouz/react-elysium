@@ -32,10 +32,6 @@ internet is written in English. And it is the international language
 of media and science. I can read, write or pronounce this beautiful
 tongue with no much effort. it is a pleasure to do it.`;
 
-
-
-
-
 export const first_spanish = `Hola, mi nombre es Giovani, comencé a aprender C++ en 2017 y fue mi
 primera experiencia sobre este maravilloso mundo. Pero era una especie de hobby.
 hasta el año 2019 que comencé a estudiar programación web con un mejor
@@ -69,5 +65,3 @@ leer grandes libros y artículos además de la mayor parte del contenido en el
 Internet está escrito en inglés. Y es el idioma internacional.
 de los medios y la ciencia. Puedo leer, escribir o pronunciar esta hermosa
 lengua sin mucho esfuerzo. es un placer hacerlo.`;
-
-

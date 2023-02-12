@@ -9,7 +9,6 @@ import { Routes } from '../layout/Routes';
 import Layout from '../layout/Layout';
 import { project, attached } from './constants';
 
-
 //const tip = 'You may see my source code on Github!';
 const tip2 = 'Here i show some technologies i currently use each day';
 

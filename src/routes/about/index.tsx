@@ -14,7 +14,6 @@ import ReactIcon from 'icons/ReactIcon';
 
 import { first_text, second_text, third_text, fourth_text } from './text';
 
-
 function About() {
   return (
     <>
@@ -102,7 +101,7 @@ const Es6LiteralString = styled.div`
     font-family: signika;
     color: #008394;
     &:hover {
-     color: #ff0000;
+      color: #ff0000;
     }
   }
 `;

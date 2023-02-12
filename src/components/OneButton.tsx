@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
-
-
-
 export const OneButton = styled.button`
   cursor: pointer;
-  width: 150px;
+  width: 160px;
   padding: 0.5em 0;
   margin: 0.5em;
   color: #ffffff;
@@ -15,6 +12,6 @@ export const OneButton = styled.button`
   outline: none;
   background-color: blue;
   &:hover {
-    filter: drop-shadow(0 0 2em #2196f3);
+    filter: drop-shadow(0 0 2em #f1f1f1);
   }
 `;

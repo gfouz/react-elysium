@@ -1,4 +1,4 @@
-var f=Object.defineProperty,p=Object.defineProperties;var b=Object.getOwnPropertyDescriptors;var d=Object.getOwnPropertySymbols;var w=Object.prototype.hasOwnProperty,v=Object.prototype.propertyIsEnumerable;var m=(e,a,r)=>a in e?f(e,a,{enumerable:!0,configurable:!0,writable:!0,value:r}):e[a]=r,c=(e,a)=>{for(var r in a||(a={}))w.call(a,r)&&m(e,r,a[r]);if(d)for(var r of d(a))v.call(a,r)&&m(e,r,a[r]);return e},g=(e,a)=>p(e,b(a));import{s as n,j as t,r as o,F as y,a as i}from"./index.c1fb2b18.js";import{L as x,R as h}from"./Containers.57901051.js";import{R as z}from"./Routes.ae8a7942.js";import{H as l}from"./Headline.26743018.js";const j=e=>t(k,g(c({},e),{children:e.children})),k=n.span`
+var f=Object.defineProperty,p=Object.defineProperties;var b=Object.getOwnPropertyDescriptors;var d=Object.getOwnPropertySymbols;var w=Object.prototype.hasOwnProperty,v=Object.prototype.propertyIsEnumerable;var m=(e,a,i)=>a in e?f(e,a,{enumerable:!0,configurable:!0,writable:!0,value:i}):e[a]=i,c=(e,a)=>{for(var i in a||(a={}))w.call(a,i)&&m(e,i,a[i]);if(d)for(var i of d(a))v.call(a,i)&&m(e,i,a[i]);return e},g=(e,a)=>p(e,b(a));import{s as n,j as t,r as o,F as y,a as r,H as l}from"./index.3842c09f.js";import{L as x,R as h}from"./Containers.783f494a.js";import{R as z}from"./Routes.affebc77.js";const j=e=>t(k,g(c({},e),{children:e.children})),k=n.span`
   color: ${e=>e.color||"#888888"};
   margin: ${e=>e.m};
   font-size: ${e=>e.size};
@@ -31,7 +31,7 @@ has been a good investment for my life, because this has allowed me to
 read great books and articles besides most of the content on the
 internet is written in English. And it is the international language
 of media and science. I can read, write or pronounce this beautiful
-tongue with no much effort. it is a pleasure to do it.`;function Q(){return t(y,{children:t(x,{options:z,children:i(N,{children:[i(l,{upper:!0,m:"2em 0",size:"2em",bolder:!0,center:!0,color:"#999999",children:["About",t(j,{color:"#000000",children:"Me"})]}),t(R,{children:t("img",{src:"./images/avatar.jpg",alt:"avatar"})}),i(u,{children:[i(s,{children:[t(l,{color:"#444444",bolder:!0,children:"My outlook about programming."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:I})]}),i(s,{children:[t(l,{color:"#444444",bolder:!0,children:"A bit of my work."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t(B,{dangerouslySetInnerHTML:{__html:M}})]})]}),t(V,{children:t("img",{src:"./images/piece.jpg",alt:"pc"})}),i(u,{children:[i(s,{children:[t(l,{color:"#444444",bolder:!0,children:"CSS architecture"}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:S})]}),i(s,{children:[t(l,{color:"#444444",bolder:!0,children:"English language a beloved tool."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:C})]})]}),i(P,{children:[t(T,{upper:!0,bolder:!0,center:!0,p:"2em",spacing:"5px",children:"Imagination & inspiration"}),t("img",{className:"secondary__image",src:"./images/spider.jpg",alt:"spider"})]}),i($,{children:[t(L,{}),t(_,{}),t(H,{fontSize:"35px"}),t(E,{}),t(A,{fontSize:"25px"})]})]})})})}const N=n.div`
+tongue with no much effort. it is a pleasure to do it.`;function O(){return t(y,{children:t(x,{options:z,children:r(N,{children:[r(l,{upper:!0,m:"2em 0",size:"2em",bolder:!0,center:!0,color:"#999999",children:["About",t(j,{color:"#000000",children:"Me"})]}),t(R,{children:t("img",{src:"./images/avatar.jpg",alt:"avatar"})}),r(u,{children:[r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"My outlook about programming."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:I})]}),r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"A bit of my work."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t(B,{dangerouslySetInnerHTML:{__html:M}})]})]}),t(V,{children:t("img",{src:"./images/piece.jpg",alt:"pc"})}),r(u,{children:[r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"CSS architecture"}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:S})]}),r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"English language a beloved tool."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:C})]})]}),r(P,{children:[t(T,{upper:!0,bolder:!0,center:!0,p:"2em",spacing:"5px",children:"Imagination & inspiration"}),t("img",{className:"secondary__image",src:"./images/spider.jpg",alt:"spider"})]}),r($,{children:[t(L,{}),t(_,{}),t(H,{fontSize:"35px"}),t(E,{}),t(A,{fontSize:"25px"})]})]})})})}const N=n.div`
   width: 100%;
   img {
     max-width: 100%;
@@ -48,7 +48,7 @@ tongue with no much effort. it is a pleasure to do it.`;function Q(){return t(y,
     font-family: signika;
     color: #008394;
     &:hover {
-     color: #ff0000;
+      color: #ff0000;
     }
   }
 `,s=n.div`
@@ -61,6 +61,7 @@ tongue with no much effort. it is a pleasure to do it.`;function Q(){return t(y,
   }
 `,R=n(h)`
   justify-content: flex-start;
+  padding: 0 4em;
 `,V=n(h)`
   flex-wrap: wrap;
   justify-content: center;
@@ -74,4 +75,4 @@ tongue with no much effort. it is a pleasure to do it.`;function Q(){return t(y,
 `,$=n(h)`
   padding: 6em 0;
   background-color: #fbfbfb;
-`;export{Q as default};
+`;export{O as default};

@@ -4,6 +4,7 @@ import { RowArranged } from 'components/Containers';
 import { Headline } from 'components/Headline';
 import Suggestions from 'components/Suggestion';
 import WebLink from 'components/Link';
+
 import SpyGlass from 'icons/SpyGlass';
 import { Routes } from '../layout/Routes';
 import Layout from '../layout/Layout';

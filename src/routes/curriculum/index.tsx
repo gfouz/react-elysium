@@ -145,6 +145,10 @@ const PictureContainer = styled.div`
 const MainPicture = styled.img.attrs({ src: './images/gfouzcoffee.jpg', alt: 'gfouz' })`
   max-width: 100%;
   height: auto;
+  &:hover {
+   transform: rotateY(180deg);
+   transition: 1s;
+  }
 `;
 const SummaryList = styled.ol`
   padding: 0 1.5em;
@@ -153,7 +157,7 @@ const SummaryList = styled.ol`
   flex-direction: column;
 `;
 const DownloadSection = styled.div`
- padding: 2em 0;
+ padding: 1em 0;
  margin: 2em 0 0 0;
  background-color: #333333;
 `;
@@ -161,7 +165,6 @@ const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1em;
 `;
 const DownloadButton = styled(OneButton)`
    background-color: #06ade5;

@@ -30,18 +30,14 @@ export default function Homepage() {
 
       <HomepageMain>
         <PictureContainer>
-          <Headline center bolder size='2.7em' color='#451a23'>
-            <MainTitle>Hello world !</MainTitle>
-          </Headline>
           <MainPicture />
-          <Headline size='1.3em' center color='#451a23' bolder spacing='5px' fontfam='signika'>
-            <Typewriter color='#451a23' text='Fullstack development' />
+        </PictureContainer>
+        <Headline size='1.3em' center color='#451a23' bolder spacing='5px' fontfam='signika'>
+            <Typewriter color='#451a23' text='Fullstack development NodeJs' />
           </Headline>
           <SelfReminder>
-            <p>"{attached_3}"</p>
+            <Subtitle center >"{attached_3}"</Subtitle>
           </SelfReminder>
-        </PictureContainer>
-
         <LogoContainer>
           <SpyGlass fontSize='40px' color='#451a23' />
         </LogoContainer>
@@ -94,7 +90,7 @@ export default function Homepage() {
 }
 
 const HomeContainer = styled.div`
-  background-color: #c2c5aa;
+  background-color: #f7f7f7;
   display: grid;
   grid-template-areas:
     'header '
@@ -125,11 +121,7 @@ const HomepageMain = styled.main`
   flex-direction: column;
   align-items: center;
 `;
-const MainTitle = styled.h1`
-  position: relative;
-  top: 20px;
-  font-family: signika;
-`;
+const Subtitle = styled(Headline)``;
 const Es6LiteralString = styled.p`
   text-align: left;
   a {
@@ -140,19 +132,23 @@ const Es6LiteralString = styled.p`
     }
   }
 `;
-const PictureContainer = styled.div``;
+const PictureContainer = styled.div`
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+`;
 const SecondaryPictureContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: #020203;
 `;
-const MainPicture = styled.img.attrs({ src: './images/prog.png', alt: 'knightman' })`
-  margin: 0 auto;
+const MainPicture = styled.img.attrs({ src: './images/fullstack.jpg', alt: 'knightman' })`
   max-width: 100%;
   height: auto;
 `;
-const SecondaryPicture = styled.img.attrs({ src: './images/second.jpg', alt: 'second' })`
+const SecondaryPicture = styled.img.attrs({ src: './images/laptop.jpg', alt: 'second' })`
   max-width: 100%;
   height: auto;
 `;

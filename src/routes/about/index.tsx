@@ -116,6 +116,7 @@ const Paragraph = styled.div`
 `;
 const PrimaryArticle = styled(RowArranged)`
   justify-content: flex-start;
+  padding: 0 4em;
 `;
 const SecondaryArticle = styled(RowArranged)`
   flex-wrap: wrap;

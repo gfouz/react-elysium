@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ChakraProvider } from '@chakra-ui/react';
-import Loader from './routes/common/Loader';
+import Loader from 'components/Loader';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import routes from './routes/routes';
 import './index.css';

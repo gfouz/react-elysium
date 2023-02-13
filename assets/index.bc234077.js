@@ -1,4 +1,4 @@
-import{s as t,r as d,h as b,a as i,j as e,H as f}from"./index.3842c09f.js";import{H as v,F as y}from"./Footer.ecd56324.js";const p=t.button`
+import{s as t,r as d,h as b,a as i,j as e,H as f}from"./index.16254e9b.js";import{H as v,F as y}from"./Footer.01534946.js";const p=t.button`
   cursor: pointer;
   width: 160px;
   padding: 0.5em 0;
@@ -26,7 +26,7 @@ tel: +52 222 434 7574 .</p>
 CUANTICO:
 Calle 253. Esq. 94, No. 9218. La Cumbre,San Miguel del Padr\xF3n, La
 Habana.
-tel: 54695264, 52392484, cuanticohtv@gmail.com </p>`,k=`Pre-university level.
+Correo: cuanticosurl@gmail.com </p>`,k=`Pre-university level.
 <p>English language: self taught advanced level.</p>
 <p>Self taught Knowledge about electronics and c++.</p>`,C=`I currently use react-query, react-hook-form, zustang, valtio,
 react-router-dom, and for css in js the popular styled-components.

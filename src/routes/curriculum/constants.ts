@@ -21,7 +21,7 @@ tel: +52 222 434 7574 .</p>
 CUANTICO:
 Calle 253. Esq. 94, No. 9218. La Cumbre,San Miguel del Padrón, La
 Habana.
-tel: 54695264, 52392484, cuanticohtv@gmail.com </p>`;
+Correo: cuanticosurl@gmail.com </p>`;
 
 export const education: string = `Pre-university level.
 <p>English language: self taught advanced level.</p>

@@ -57,10 +57,6 @@ export default function Homepage() {
       </HomepageMain>
 
       <Aside bg='#d3bb72'>
-        <ProfileCard>
-          <Headline upper>Overview</Headline>
-          <p> {attached_1} </p>
-        </ProfileCard>
         <RemoteLinks>
           <YoutubeLink>
             YouTube Channel
@@ -71,6 +67,11 @@ export default function Homepage() {
             <GitAlt fontSize='30px' color='#222222' />
           </GithubLink>
         </RemoteLinks>
+        <ProfileCard>
+          <Headline upper>Overview</Headline>
+          <p> {attached_1} </p>
+        </ProfileCard>
+        
         <ProfileCard>
           <p> {attached_2} </p>
         </ProfileCard>

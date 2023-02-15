@@ -33,10 +33,10 @@ export default function Homepage() {
           <MainPicture />
         </PictureContainer>
         <Headline size='1.3em' center color='#451a23' bolder spacing='5px' fontfam='signika'>
-            <Typewriter color='#451a23' text='Fullstack development NodeJs' />
+            <Typewriter color='#451a23' text='Fullstack development with NodeJs' />
           </Headline>
           <SelfReminder>
-            <Subtitle center >"{attached_3}"</Subtitle>
+            <Comment center >"{attached_3}"</Comment>
           </SelfReminder>
         <LogoContainer>
           <SpyGlass fontSize='40px' color='#451a23' />
@@ -57,16 +57,7 @@ export default function Homepage() {
       </HomepageMain>
 
       <Aside bg='#d3bb72'>
-        <RemoteLinks>
-          <YoutubeLink>
-            YouTube Channel
-            <Youtube fontSize='30px' color='#c40550' />
-          </YoutubeLink>
-          <GithubLink>
-            Github Projects
-            <GitAlt fontSize='30px' color='#222222' />
-          </GithubLink>
-        </RemoteLinks>
+       
         <ProfileCard>
           <Headline upper>Overview</Headline>
           <p> {attached_1} </p>
@@ -81,6 +72,16 @@ export default function Homepage() {
         <ProfileCard>
           <Es6LiteralString dangerouslySetInnerHTML={{ __html: experience }} />
         </ProfileCard>
+         <RemoteLinks>
+          <YoutubeLink>
+            YouTube Channel
+            <Youtube fontSize='30px' color='#c40550' />
+          </YoutubeLink>
+          <GithubLink>
+            Github Projects
+            <GitAlt fontSize='30px' color='#222222' />
+          </GithubLink>
+        </RemoteLinks>
       </Aside>
       <Sidebar options={Routes} />
       <Footer bg='#2a160f' color='#c2c5aa'>
@@ -91,7 +92,6 @@ export default function Homepage() {
 }
 
 const HomeContainer = styled.div`
-  background-color: #f7f7f7;
   display: grid;
   grid-template-areas:
     'header '
@@ -122,7 +122,9 @@ const HomepageMain = styled.main`
   flex-direction: column;
   align-items: center;
 `;
-const Subtitle = styled(Headline)``;
+const Comment = styled(Headline)`
+  font-size: 13px;
+`;
 const Es6LiteralString = styled.p`
   text-align: left;
   a {
@@ -145,7 +147,7 @@ const SecondaryPictureContainer = styled.div`
   justify-content: center;
   background-color: #020203;
 `;
-const MainPicture = styled.img.attrs({ src: './images/fullstack.jpg', alt: 'knightman' })`
+const MainPicture = styled.img.attrs({ src: './images/workflow.jpg', alt: 'knightman' })`
   max-width: 100%;
   height: auto;
 `;

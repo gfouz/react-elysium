@@ -11,9 +11,9 @@ export const second_text = `I worked in the first phase of a system to generate 
 certificates for Segurmática which is the information security company in Cuba, 
 I participated in the creation or abstraction of the database in this case relational 
 using PostgreSQL and Sequelize as ORM. As well as designed the Rest Api of routes and 
-controllers with Express and Node. Use React to create the front end or the representation 
-of the client or browser side, this system has great importance for the development 
-of digital certification in Cuba.<p>(PKI) project: <a href="https://github.com/gfouz/pki-server-2023">
+controllers with Express and Node. Use React to create the front end or client side rendering (CSR), 
+this system has great importance for the development of digital certification in Cuba.<p>(PKI) 
+project: <a href="https://github.com/gfouz/pki-server-2023">
 https://github.com/gfouz/pki-server-2023</a></p>`;
 
 export const third_text = `I've been writing css code for over three years. I have always asked

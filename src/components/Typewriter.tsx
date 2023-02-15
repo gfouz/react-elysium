@@ -26,7 +26,7 @@ const StyledWriter = styled.div`
   width: 100%;
   color: ${(props: ITypeWriter) => props.color || '#c40550'};
   font-weight: bolder;
-  font-size: ${(props: ITypeWriter) => props.size || '16px'};
+  font-size: ${(props: ITypeWriter) => props.size || '12px'};
   text-transform: uppercase;
   text-align: ${(props: ITypeWriter) => props.align || 'center'};
   padding: ${(props: ITypeWriter) => props.p};

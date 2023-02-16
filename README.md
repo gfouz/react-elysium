@@ -1,8 +1,8 @@
-<h1 align='center'>Vite + React + TypeScript + Eslint + Prettier Template ⚡</h1>
+<h1 align='center'>Vite + React + TypeScript + Eslint + Prettier Project⚡</h1>
 
 https://github.com/gfouz/react-portfolio
 
-## deployment path: https://gfouz.github.io/react-portfolio/
+## deployment path: https://gfouz.github.io/react-elysium/
 
 Create a new project with Vite, React JS, TypeScript, Eslint, Prettier in just 1 second and you don't need to setup anything.
 
@@ -46,7 +46,7 @@ yarn install
 yarn dev
 ```
 
-4. If you using git, delete the existing folder .git after cloning (open `git bash` or other terminal)
+4. If you are using git, delete the existing folder .git after cloning (open `git bash` or other terminal)
 
 ```
 rm -rf .git

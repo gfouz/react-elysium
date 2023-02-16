@@ -32,7 +32,7 @@ export default function Homepage() {
         <PictureContainer>
           <MainPicture />
         </PictureContainer>
-        <Headline size='1.3em' center color='#451a23' bolder spacing='5px' fontfam='signika'>
+        <Headline size='1.3em' center color='#451a23' bolder spacing='5px' fontfam='signika' p='2em 0 0 0'>
             <Typewriter color='#451a23' text='Fullstack development with NodeJs' />
           </Headline>
           <SelfReminder>

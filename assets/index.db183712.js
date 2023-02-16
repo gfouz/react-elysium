@@ -1,4 +1,4 @@
-var de=Object.defineProperty,ce=Object.defineProperties;var ue=Object.getOwnPropertyDescriptors;var K=Object.getOwnPropertySymbols;var fe=Object.prototype.hasOwnProperty,he=Object.prototype.propertyIsEnumerable;var Q=(e,n,a)=>n in e?de(e,n,{enumerable:!0,configurable:!0,writable:!0,value:a}):e[n]=a,g=(e,n)=>{for(var a in n||(n={}))fe.call(n,a)&&Q(e,a,n[a]);if(K)for(var a of K(n))he.call(n,a)&&Q(e,a,n[a]);return e},U=(e,n)=>ce(e,ue(n));import{r as h,s as i,u as me,j as t,F as pe,a as s,H as c}from"./index.39a244b6.js";import{p as V,u as Z,R as ge}from"./Routes.96d35817.js";import{H as ve,F as ye}from"./Footer.f782dce6.js";import{S as be}from"./SpyGlass.0209a8e1.js";var ee={};function we(e){if(!e||typeof window=="undefined")return;const n=document.createElement("style");return n.setAttribute("type","text/css"),n.innerHTML=e,document.head.appendChild(n),e}Object.defineProperty(ee,"__esModule",{value:!0});var l=h.exports;function xe(e){return e&&typeof e=="object"&&"default"in e?e:{default:e}}var f=xe(l);/*! *****************************************************************************
+var de=Object.defineProperty,ce=Object.defineProperties;var ue=Object.getOwnPropertyDescriptors;var K=Object.getOwnPropertySymbols;var fe=Object.prototype.hasOwnProperty,he=Object.prototype.propertyIsEnumerable;var Q=(e,n,i)=>n in e?de(e,n,{enumerable:!0,configurable:!0,writable:!0,value:i}):e[n]=i,g=(e,n)=>{for(var i in n||(n={}))fe.call(n,i)&&Q(e,i,n[i]);if(K)for(var i of K(n))he.call(n,i)&&Q(e,i,n[i]);return e},U=(e,n)=>ce(e,ue(n));import{r as h,s as a,u as me,j as t,F as pe,a as s,H as c}from"./index.c92b15c8.js";import{p as V,u as Z,R as ge}from"./Routes.73d33e7c.js";import{H as ve,F as ye}from"./Footer.fffe2762.js";import{S as be}from"./SpyGlass.fd24e656.js";var ee={};function we(e){if(!e||typeof window=="undefined")return;const n=document.createElement("style");return n.setAttribute("type","text/css"),n.innerHTML=e,document.head.appendChild(n),e}Object.defineProperty(ee,"__esModule",{value:!0});var l=h.exports;function xe(e){return e&&typeof e=="object"&&"default"in e?e:{default:e}}var f=xe(l);/*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
 
 Permission to use, copy, modify, and/or distribute this software for any
@@ -11,7 +11,7 @@ INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
 LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */var v=function(){return v=Object.assign||function(n){for(var a,r=1,o=arguments.length;r<o;r++){a=arguments[r];for(var d in a)Object.prototype.hasOwnProperty.call(a,d)&&(n[d]=a[d])}return n},v.apply(this,arguments)};we(`.marquee-container {
+***************************************************************************** */var v=function(){return v=Object.assign||function(n){for(var i,r=1,o=arguments.length;r<o;r++){i=arguments[r];for(var d in i)Object.prototype.hasOwnProperty.call(i,d)&&(n[d]=i[d])}return n},v.apply(this,arguments)};we(`.marquee-container {
   overflow-x: hidden !important;
   display: flex !important;
   flex-direction: row !important;
@@ -67,14 +67,14 @@ PERFORMANCE OF THIS SOFTWARE.
   100% {
     transform: translateX(-100%);
   }
-}`);var ke=function(e){var n,a,r,o,d=e.style,te=d===void 0?{}:d,C=e.className,ne=C===void 0?"":C,z=e.play,m=z===void 0?!0:z,j=e.pauseOnHover,E=j===void 0?!1:j,N=e.pauseOnClick,R=N===void 0?!1:N,q=e.direction,A=q===void 0?"left":q,L=e.speed,M=L===void 0?20:L,I=e.delay,F=I===void 0?0:I,H=e.loop,p=H===void 0?0:H,O=e.gradient,ae=O===void 0?!0:O,P=e.gradientColor,y=P===void 0?[255,255,255]:P,$=e.gradientWidth,b=$===void 0?200:$,ie=e.onFinish,re=e.onCycleComplete,T=e.children,W=l.useState(0),B=W[0],oe=W[1],G=l.useState(0),X=G[0],se=G[1],Y=l.useState(!1),w=Y[0],le=Y[1],x=l.useRef(null),k=l.useRef(null);l.useEffect(function(){if(!!w){var _=function(){k.current&&x.current&&(oe(x.current.getBoundingClientRect().width),se(k.current.getBoundingClientRect().width))};return _(),window.addEventListener("resize",_),function(){window.removeEventListener("resize",_)}}},[w]),l.useEffect(function(){le(!0)},[]);var D="rgba("+y[0]+", "+y[1]+", "+y[2],J=X<B?B/M:X/M;return f.default.createElement(l.Fragment,null,w?f.default.createElement("div",{ref:x,style:v(v({},te),(n={},n["--pause-on-hover"]=!m||E?"paused":"running",n["--pause-on-click"]=!m||E&&!R||R?"paused":"running",n)),className:ne+" marquee-container"},ae&&f.default.createElement("div",{style:(a={},a["--gradient-color"]=D+", 1), "+D+", 0)",a["--gradient-width"]=typeof b=="number"?b+"px":b,a),className:"overlay"}),f.default.createElement("div",{ref:k,style:(r={},r["--play"]=m?"running":"paused",r["--direction"]=A==="left"?"normal":"reverse",r["--duration"]=J+"s",r["--delay"]=F+"s",r["--iteration-count"]=p?""+p:"infinite",r),className:"marquee",onAnimationIteration:re,onAnimationEnd:ie},T),f.default.createElement("div",{style:(o={},o["--play"]=m?"running":"paused",o["--direction"]=A==="left"?"normal":"reverse",o["--duration"]=J+"s",o["--delay"]=F+"s",o["--iteration-count"]=p?""+p:"infinite",o),className:"marquee","aria-hidden":"true"},T)):null)},_e=ee.default=ke;const Se=V({opt:"homepage",setOption:e=>Se.opt=e}),u=V({st:!1,setTrue:()=>u.st=!0,setFalse:()=>u.st=!1,reverse:()=>u.st=!u.st}),Ce=i.aside`
+}`);var ke=function(e){var n,i,r,o,d=e.style,te=d===void 0?{}:d,C=e.className,ne=C===void 0?"":C,z=e.play,m=z===void 0?!0:z,j=e.pauseOnHover,E=j===void 0?!1:j,N=e.pauseOnClick,R=N===void 0?!1:N,q=e.direction,A=q===void 0?"left":q,L=e.speed,M=L===void 0?20:L,I=e.delay,F=I===void 0?0:I,H=e.loop,p=H===void 0?0:H,O=e.gradient,ie=O===void 0?!0:O,P=e.gradientColor,y=P===void 0?[255,255,255]:P,$=e.gradientWidth,b=$===void 0?200:$,ae=e.onFinish,re=e.onCycleComplete,T=e.children,W=l.useState(0),B=W[0],oe=W[1],G=l.useState(0),X=G[0],se=G[1],Y=l.useState(!1),w=Y[0],le=Y[1],x=l.useRef(null),k=l.useRef(null);l.useEffect(function(){if(!!w){var _=function(){k.current&&x.current&&(oe(x.current.getBoundingClientRect().width),se(k.current.getBoundingClientRect().width))};return _(),window.addEventListener("resize",_),function(){window.removeEventListener("resize",_)}}},[w]),l.useEffect(function(){le(!0)},[]);var D="rgba("+y[0]+", "+y[1]+", "+y[2],J=X<B?B/M:X/M;return f.default.createElement(l.Fragment,null,w?f.default.createElement("div",{ref:x,style:v(v({},te),(n={},n["--pause-on-hover"]=!m||E?"paused":"running",n["--pause-on-click"]=!m||E&&!R||R?"paused":"running",n)),className:ne+" marquee-container"},ie&&f.default.createElement("div",{style:(i={},i["--gradient-color"]=D+", 1), "+D+", 0)",i["--gradient-width"]=typeof b=="number"?b+"px":b,i),className:"overlay"}),f.default.createElement("div",{ref:k,style:(r={},r["--play"]=m?"running":"paused",r["--direction"]=A==="left"?"normal":"reverse",r["--duration"]=J+"s",r["--delay"]=F+"s",r["--iteration-count"]=p?""+p:"infinite",r),className:"marquee",onAnimationIteration:re,onAnimationEnd:ae},T),f.default.createElement("div",{style:(o={},o["--play"]=m?"running":"paused",o["--direction"]=A==="left"?"normal":"reverse",o["--duration"]=J+"s",o["--delay"]=F+"s",o["--iteration-count"]=p?""+p:"infinite",o),className:"marquee","aria-hidden":"true"},T)):null)},_e=ee.default=ke;const Se=V({opt:"homepage",setOption:e=>Se.opt=e}),u=V({st:!1,setTrue:()=>u.st=!0,setFalse:()=>u.st=!1,reverse:()=>u.st=!u.st}),Ce=a.aside`
   grid-area: aside;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: ${e=>e.color};
   background-color: ${e=>e.bg};
-`;function ze(e){const n=me(),{pathname:a}=n,r=e.options.filter(o=>o.path!==a);return t(pe,{children:t(je,{children:t("div",{className:"nav",children:r.map((o,d)=>t("ul",{className:"nav__list",children:s("li",{className:"nav__item",children:[t("div",{className:"nav__icon",children:o.icon}),t("div",{className:"nav__link",children:o.link})]})},d))})})})}const je=i.div`
+`;function ze(e){const n=me(),{pathname:i}=n,r=e.options.filter(o=>o.path!==i);return t(pe,{children:t(je,{children:t("div",{className:"nav",children:r.map((o,d)=>t("ul",{className:"nav__list",children:s("li",{className:"nav__item",children:[t("div",{className:"nav__icon",children:o.icon}),t("div",{className:"nav__link",children:o.link})]})},d))})})})}const je=a.div`
   height: 100%;
   flex-direction: column;
   justify-content: space-evenly;
@@ -94,7 +94,7 @@ PERFORMANCE OF THIS SOFTWARE.
     margin: 1em 1em 0 0;
     color: white;
   }
-`;function Ee(e){const n=Z(u),{st:a,setFalse:r}=n;return t(Ne,{children:t("div",{className:a?"opened":"closed",onClick:r,children:t(ze,{options:e.options})})})}const Ne=i.nav`
+`;function Ee(e){const n=Z(u),{st:i,setFalse:r}=n;return t(Ne,{children:t("div",{className:i?"opened":"closed",onClick:r,children:t(ze,{options:e.options})})})}const Ne=a.nav`
   .opened {
     position: absolute;
     top: 0;
@@ -113,7 +113,7 @@ PERFORMANCE OF THIS SOFTWARE.
     display: none;
     transform: translateX(-40%);
   }
-`,Re=({st:e,reverse:n})=>t(Ae,{children:s("button",{onClick:()=>n(),children:[t("div",{className:e?"opened":"closed"}),t("div",{className:e?"opened":"closed"}),t("div",{className:e?"opened":"closed"})]})});var qe=Re;const Ae=i.div`
+`,Re=({st:e,reverse:n})=>t(Ae,{children:s("button",{onClick:()=>n(),children:[t("div",{className:e?"opened":"closed"}),t("div",{className:e?"opened":"closed"}),t("div",{className:e?"opened":"closed"})]})});var qe=Re;const Ae=a.div`
   button {
     position: absolute;
     right: 0.1em;
@@ -184,11 +184,11 @@ PERFORMANCE OF THIS SOFTWARE.
       transform: rotate(0);
     }
   }
-`;function Le(e){const{text:n}=e;return t(Me,U(g({},e),{children:t("p",{children:n})}))}const Me=i.div`
+`;function Le(e){const{text:n}=e;return t(Me,U(g({},e),{children:t("p",{children:n})}))}const Me=a.div`
   width: 100%;
   color: ${e=>e.color||"#c40550"};
   font-weight: bolder;
-  font-size: ${e=>e.size||"16px"};
+  font-size: ${e=>e.size||"12px"};
   text-transform: uppercase;
   text-align: ${e=>e.align||"center"};
   padding: ${e=>e.p};
@@ -237,8 +237,7 @@ using PostgreSQL and Sequelize as ORM. As well as designed the Rest Api of route
 controllers with Express and Node. Use React for client side rendering, this system has 
 great importance for the development of digital certification in Cuba.</p>
 <p>(PKI) project: <a href="https://github.com/gfouz/pki-server-2023">
-https://github.com/gfouz/pki-server-2023</a></p>`;function rt(){const e=Z(u),{st:n,reverse:a}=e;return s(Te,{children:[s(ve,{bg:"#2a160f",color:"#c2c5aa",children:["gfouz-",new Date().getFullYear(),t(qe,{st:n,reverse:a})]}),s(We,{children:[t(Xe,{children:t(De,{})}),t(c,{size:"1.3em",center:!0,color:"#451a23",bolder:!0,spacing:"5px",fontfam:"signika",children:t(Le,{color:"#451a23",text:"Fullstack development NodeJs"})}),t(Ze,{children:s(Be,{center:!0,children:['"',Pe,'"']})}),t(Ke,{children:t(be,{fontSize:"40px",color:"#451a23"})}),t(Ye,{children:t(Je,{})}),t(c,{center:!0,bolder:!0,upper:!0,p:"2em 0",children:"Technologies"}),t(_e,{children:t(c,{bolder:!0,color:"#451a23",spacing:"6px",upper:!0,fontfam:"signika",children:"ReactJS styled-components valtio react-query react-hook-form axios eslint prettier typescript ExpressJS"})})]}),s(Ce,{bg:"#d3bb72",children:[s(Qe,{children:[s(Ue,{children:["YouTube Channel",t(Fe,{fontSize:"30px",color:"#c40550"})]}),s(Ve,{children:["Github Projects",t(Ie,{fontSize:"30px",color:"#222222"})]})]}),s(S,{children:[t(c,{upper:!0,children:"Overview"}),s("p",{children:[" ",He," "]})]}),t(S,{children:s("p",{children:[" ",Oe," "]})}),t(c,{center:!0,bolder:!0,children:"PKI System"}),t(S,{children:t(Ge,{dangerouslySetInnerHTML:{__html:$e}})})]}),t(Ee,{options:ge}),s(ye,{bg:"#2a160f",color:"#c2c5aa",children:["Portfolio \xA9 ",new Date().getFullYear()]})]})}const Te=i.div`
-  background-color: #f7f7f7;
+https://github.com/gfouz/pki-server-2023</a></p>`;function rt(){const e=Z(u),{st:n,reverse:i}=e;return s(Te,{children:[s(ve,{bg:"#2a160f",color:"#c2c5aa",children:["gfouz-",new Date().getFullYear(),t(qe,{st:n,reverse:i})]}),s(We,{children:[t(Xe,{children:t(De,{})}),t(c,{size:"1.3em",center:!0,color:"#451a23",bolder:!0,spacing:"5px",fontfam:"signika",p:"2em 0 0 0",children:t(Le,{color:"#451a23",text:"Fullstack development with NodeJs"})}),t(Ze,{children:s(Be,{center:!0,children:['"',Pe,'"']})}),t(Ke,{children:t(be,{fontSize:"40px",color:"#451a23"})}),t(Ye,{children:t(Je,{})}),t(c,{center:!0,bolder:!0,upper:!0,p:"2em 0",children:"Technologies"}),t(_e,{children:t(c,{bolder:!0,color:"#451a23",spacing:"6px",upper:!0,fontfam:"signika",children:"ReactJS styled-components valtio react-query react-hook-form axios eslint prettier typescript ExpressJS"})})]}),s(Ce,{bg:"#d3bb72",children:[s(S,{children:[t(c,{upper:!0,children:"Overview"}),s("p",{children:[" ",He," "]})]}),t(S,{children:s("p",{children:[" ",Oe," "]})}),t(c,{center:!0,bolder:!0,children:"PKI System"}),t(S,{children:t(Ge,{dangerouslySetInnerHTML:{__html:$e}})}),s(Qe,{children:[s(Ue,{children:["YouTube Channel",t(Fe,{fontSize:"30px",color:"#c40550"})]}),s(Ve,{children:["Github Projects",t(Ie,{fontSize:"30px",color:"#222222"})]})]})]}),t(Ee,{options:ge}),s(ye,{bg:"#2a160f",color:"#c2c5aa",children:["Portfolio \xA9 ",new Date().getFullYear()]})]})}const Te=a.div`
   display: grid;
   grid-template-areas:
     'header '
@@ -262,12 +261,14 @@ https://github.com/gfouz/pki-server-2023</a></p>`;function rt(){const e=Z(u),{st
     font-weight: bolder;
     font-display: block;
   }
-`,We=i.main`
+`,We=a.main`
   grid-area: main;
   display: flex;
   flex-direction: column;
   align-items: center;
-`,Be=i(c)``,Ge=i.p`
+`,Be=a(c)`
+  font-size: 13px;
+`,Ge=a.p`
   text-align: left;
   a {
     font-family: signika;
@@ -276,23 +277,23 @@ https://github.com/gfouz/pki-server-2023</a></p>`;function rt(){const e=Z(u),{st
       color: #ff0000;
     }
   }
-`,Xe=i.div`
+`,Xe=a.div`
  width: 100%;
  display: flex;
  flex-direction: column;
  align-items: flex-end;
-`,Ye=i.div`
+`,Ye=a.div`
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: #020203;
-`,De=i.img.attrs({src:"./images/fullstack.jpg",alt:"knightman"})`
+`,De=a.img.attrs({src:"./images/workflow.jpg",alt:"knightman"})`
   max-width: 100%;
   height: auto;
-`,Je=i.img.attrs({src:"./images/laptop.jpg",alt:"second"})`
+`,Je=a.img.attrs({src:"./images/laptop.jpg",alt:"second"})`
   max-width: 100%;
   height: auto;
-`,S=i.div`
+`,S=a.div`
   text-align: left;
   color: #000000;
   border: none;
@@ -302,25 +303,25 @@ https://github.com/gfouz/pki-server-2023</a></p>`;function rt(){const e=Z(u),{st
   font-weight: bolder;
   font-family: signika;
   background-color: #d3bb72;
-`,Ke=i.div`
+`,Ke=a.div`
   display: flex;
   justify-content: center;
   padding: 3em 0;
-`,Qe=i.div`
+`,Qe=a.div`
   width: 100%;
   padding: 3em 0;
   display: flex;
   justify-content: center;
   font-family: signika;
   background-color: #ffffff;
-`,Ue=i.a.attrs({href:"https://youtube.com/@giovanifouz5033"})`
+`,Ue=a.a.attrs({href:"https://youtube.com/@giovanifouz5033"})`
   margin: 0 1em;
   color: #c40550;
   font-weight: bolder;
-`,Ve=i.a.attrs({href:"https://github.com/gfouz"})`
+`,Ve=a.a.attrs({href:"https://github.com/gfouz"})`
   margin: 0 1em;
   font-weight: bolder;
-`,Ze=i.div`
+`,Ze=a.div`
   font-weight: bolder;
   font-family: signika;
 `;export{rt as default};

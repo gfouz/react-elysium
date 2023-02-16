@@ -1,4 +1,4 @@
-var f=Object.defineProperty,p=Object.defineProperties;var b=Object.getOwnPropertyDescriptors;var d=Object.getOwnPropertySymbols;var w=Object.prototype.hasOwnProperty,v=Object.prototype.propertyIsEnumerable;var m=(e,a,i)=>a in e?f(e,a,{enumerable:!0,configurable:!0,writable:!0,value:i}):e[a]=i,c=(e,a)=>{for(var i in a||(a={}))w.call(a,i)&&m(e,i,a[i]);if(d)for(var i of d(a))v.call(a,i)&&m(e,i,a[i]);return e},g=(e,a)=>p(e,b(a));import{s as n,j as t,r as o,F as y,a as r,H as l}from"./index.39a244b6.js";import{L as x,R as h}from"./Containers.82c0bd37.js";import{R as z}from"./Routes.96d35817.js";const j=e=>t(k,g(c({},e),{children:e.children})),k=n.span`
+var f=Object.defineProperty,p=Object.defineProperties;var b=Object.getOwnPropertyDescriptors;var h=Object.getOwnPropertySymbols;var w=Object.prototype.hasOwnProperty,v=Object.prototype.propertyIsEnumerable;var m=(e,a,i)=>a in e?f(e,a,{enumerable:!0,configurable:!0,writable:!0,value:i}):e[a]=i,c=(e,a)=>{for(var i in a||(a={}))w.call(a,i)&&m(e,i,a[i]);if(h)for(var i of h(a))v.call(a,i)&&m(e,i,a[i]);return e},g=(e,a)=>p(e,b(a));import{s as n,j as t,r as o,F as y,a as r,H as l}from"./index.c92b15c8.js";import{L as x,R as d}from"./Containers.fc7b94d7.js";import{R as z}from"./Routes.73d33e7c.js";const j=e=>t(k,g(c({},e),{children:e.children})),k=n.span`
   color: ${e=>e.color||"#888888"};
   margin: ${e=>e.m};
   font-size: ${e=>e.size};
@@ -12,14 +12,14 @@ purpose in mind than a hobby. So that Node js was my pick, i
 have been very interested on back-end frameworks like Express, and
 related libraries to afford security and functionality like Bcrypt and
 jsonwebtoken besides very useful concepts to reuse logic as for
-example middlewares, I enjoy to write code using these technologies`,M=`I worked in the first phase of a system to generate digital 
+example middlewares, I enjoy to write code using these technologies`,S=`I worked in the first phase of a system to generate digital 
 certificates for Segurm\xE1tica which is the information security company in Cuba, 
 I participated in the creation or abstraction of the database in this case relational 
 using PostgreSQL and Sequelize as ORM. As well as designed the Rest Api of routes and 
-controllers with Express and Node. Use React to create the front end or the representation 
-of the client or browser side, this system has great importance for the development 
-of digital certification in Cuba.<p>(PKI) project: <a href="https://github.com/gfouz/pki-server-2023">
-https://github.com/gfouz/pki-server-2023</a></p>`,S=`I've been writing css code for over three years. I have always asked
+controllers with Express and Node. Use React to create the front end or client side rendering (CSR), 
+this system has great importance for the development of digital certification in Cuba.<p>(PKI) 
+project: <a href="https://github.com/gfouz/pki-server-2023">
+https://github.com/gfouz/pki-server-2023</a></p>`,M=`I've been writing css code for over three years. I have always asked
 myself about the good practices and how I could make my code more
 readable, understandable, easy to maintain and to be handled by other
 developers. We spend more time reading our code rather than writing it
@@ -31,7 +31,7 @@ has been a good investment for my life, because this has allowed me to
 read great books and articles besides most of the content on the
 internet is written in English. And it is the international language
 of media and science. I can read, write or pronounce this beautiful
-tongue with no much effort. it is a pleasure to do it.`;function O(){return t(y,{children:t(x,{options:z,children:r(N,{children:[r(l,{upper:!0,m:"2em 0",size:"2em",bolder:!0,center:!0,color:"#999999",children:["About",t(j,{color:"#000000",children:"Me"})]}),t(R,{children:t("img",{src:"./images/avatar.jpg",alt:"avatar"})}),r(u,{children:[r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"My outlook about programming."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:I})]}),r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"A bit of my work."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t(B,{dangerouslySetInnerHTML:{__html:M}})]})]}),t(V,{children:t("img",{src:"./images/piece.jpg",alt:"pc"})}),r(u,{children:[r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"CSS architecture"}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:S})]}),r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"English language a beloved tool."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:C})]})]}),r(P,{children:[t(T,{upper:!0,bolder:!0,center:!0,p:"2em",spacing:"5px",children:"Imagination & inspiration"}),t("img",{className:"secondary__image",src:"./images/spider.jpg",alt:"spider"})]}),r($,{children:[t(L,{}),t(_,{}),t(H,{fontSize:"35px"}),t(E,{}),t(A,{fontSize:"25px"})]})]})})})}const N=n.div`
+tongue with no much effort. it is a pleasure to do it.`;function O(){return t(y,{children:t(x,{options:z,children:r(N,{children:[r(l,{upper:!0,m:"2em 0",size:"2em",bolder:!0,center:!0,color:"#999999",children:["About",t(j,{color:"#000000",children:"Me"})]}),t(B,{children:t("img",{src:"./images/avatar.jpg",alt:"avatar"})}),r(u,{children:[r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"My outlook about programming."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:I})]}),r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"A bit of my work."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t(R,{dangerouslySetInnerHTML:{__html:S}})]})]}),t(V,{children:t("img",{src:"./images/piece.jpg",alt:"pc"})}),r(u,{children:[r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"CSS architecture"}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:M})]}),r(s,{children:[t(l,{color:"#444444",bolder:!0,children:"English language a beloved tool."}),t("img",{className:"article__avatar",src:"./images/boldman.jpg",alt:"emoji"}),t("p",{children:C})]})]}),r(P,{children:[t(T,{upper:!0,bolder:!0,center:!0,p:"2em",spacing:"5px",children:"Imagination & inspiration"}),t("img",{className:"secondary__image",src:"./images/spider.jpg",alt:"spider"})]}),r($,{children:[t(L,{}),t(_,{}),t(H,{fontSize:"35px"}),t(E,{}),t(A,{fontSize:"25px"})]})]})})})}const N=n.div`
   width: 100%;
   img {
     max-width: 100%;
@@ -41,7 +41,7 @@ tongue with no much effort. it is a pleasure to do it.`;function O(){return t(y,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-`,B=n.div`
+`,R=n.div`
   padding: 0 0.5em;
   text-align: left;
   a {
@@ -59,20 +59,20 @@ tongue with no much effort. it is a pleasure to do it.`;function O(){return t(y,
   .article__avatar {
     float: left;
   }
-`,R=n(h)`
+`,B=n(d)`
   justify-content: flex-start;
   padding: 0 4em;
-`,V=n(h)`
+`,V=n(d)`
   flex-wrap: wrap;
   justify-content: center;
   background-color: #f5f5f5;
-`,P=n(h)`
+`,P=n(d)`
   flex-wrap: wrap;
   justify-content: center;
   background-color: #fbfbfb;
 `,T=n(l)`
   text-shadow: 1px 1px 10px #222222;
-`,$=n(h)`
+`,$=n(d)`
   padding: 6em 0;
   background-color: #fbfbfb;
 `;export{O as default};

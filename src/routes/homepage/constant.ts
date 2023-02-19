@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { keyframes } from 'styled-components';
+
 
 export const drawerProps: React.CSSProperties = {
   height: '150px',
@@ -35,7 +37,7 @@ export const experience = `<p>I worked in the first phase of a system to generat
 certificates for Segurmática which is the information security company in Cuba, 
 I participated in the creation or abstraction of the database in this case relational 
 using PostgreSQL and Sequelize as ORM. As well as designed the Rest Api of routes and 
-controllers with Express and Node. Use React for client side rendering, this system has 
+controllers with Express and Node. I used React for client side rendering, this system has 
 great importance for the development of digital certification in Cuba.</p>
 <p>(PKI) project: <a href="https://github.com/gfouz/pki-server-2023">
 https://github.com/gfouz/pki-server-2023</a></p>`;
@@ -50,3 +52,50 @@ reutilizar lógica como middlewares y he tenido experiencia trabajando con
 ORM u ODM para bases de datos abstractas como Sequelize o Mongoose. Tengo
 bases de datos diseñadas y resumidas para un sistema que permitirá PKI
 servicios en Cuba. `;
+
+export const growing_height = keyframes`
+  0% {
+    height: 0px;
+  }
+  25% {
+    height: 60px;
+  }
+  75% {
+    height: 60px;
+  }
+  95% {
+    height: 60px;
+  }
+  100% {
+    height: 0px;
+    display: none;
+  }
+`;
+export const growing_weights = keyframes`
+  0% {
+    width: 0px;
+    opacity: 1;
+  }
+  5% {
+    width: 300px;
+    opacity: 1;
+  }
+
+  25% {
+    width: 300px;
+    opacity: 1;
+  }
+
+  75% {
+    width: 300px;
+    opacity: 1;
+  }
+  95% {
+    width: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 0px;
+    opacity: 0;
+  }
+`;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ISvgProps } from '../icons/constants';
+import { ISvgProps } from 'icons/constants';
 
 export function Home(props: React.SVGProps<SVGSVGElement> | ISvgProps) {
   return React.createElement(

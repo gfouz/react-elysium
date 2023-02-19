@@ -1,16 +1,18 @@
+import * as React from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 
-import { useState, useEffect } from 'react';
 import { Headline } from 'components/Headline';
 import { Header } from 'components/Header';
 import { Footer } from 'components/Footer';
 import { OneButton } from 'components/OneButton';
-import { overview, skills, experience, education, technologies, fetchPdf} from './constants';
+import { overview, standards, experience, education, technologies, fetchPdf} from './constants';
+import { resumen, normas, experiencia, educacion, tecnologias} from './constants';
 
 function Curriculum() {
-  const [active, setActive]= useState( false);
-  const [width, setWidth]= useState(0);
+  const [active, setActive]= React.useState( false );
+  const [width, setWidth]= React.useState(0);
+  const [idiom, setIdiom]= React.useState( true );
   const navigate = useNavigate();
   
 
@@ -22,7 +24,10 @@ function Curriculum() {
   function CancelhandleClick() {
     navigate(-1);
   }
-  useEffect(()=> {
+  function idiomButtonClick() {
+      setIdiom( ( state ) => !state );
+  }
+  React.useEffect(()=> {
    let interval: NodeJS.Timer | undefined = undefined; 
    if (active && width < 100) {
        interval = setInterval(() => {
@@ -50,37 +55,50 @@ function Curriculum() {
         <PictureContainer>
           <MainPicture />
         </PictureContainer>
+        <IdiomButtonContainer>
+          <IdiomButton onClick={ ()=> idiomButtonClick()}>
+           { idiom ? <SpanishFlag /> : <UnitedKindomFlag />}
+          </IdiomButton>
+          <ButtonTag>{ idiom ? 'Traducir al Español': 'Translate into English'}</ButtonTag>
+        </IdiomButtonContainer>
         <Subtitle upper bolder mt>
-          Overview
+          {idiom  ? 'Overview': 'Resumen'}
         </Subtitle>
-        <Es6LiteralString dangerouslySetInnerHTML={{ __html: overview }} />
+        <Es6LiteralString dangerouslySetInnerHTML={{ __html: idiom ? overview : resumen }} />
         <Subtitle upper bolder mt>
-          skills hightlights
+         { idiom ? 'standards and rules':'normas o convenciones'}
         </Subtitle>
         <SummaryList>
-          {skills.map((skill, index) => (
-            <li key={index}>{skill}</li>
-          ))}
+          {idiom ? standards.map( ( item, index) => (
+            <li key={ index }>{ item }</li>
+          )) : normas.map( ( item, index) => (
+            <li key={ index }>{ item }</li>
+          ))
+        }
         </SummaryList>
         <Subtitle upper bolder mt>
-          experience
+          { idiom ? 'experience':'experiencia' }
         </Subtitle>
-        <Es6LiteralString dangerouslySetInnerHTML={{ __html: experience }} />
+        <Es6LiteralString dangerouslySetInnerHTML={{ __html: idiom ? experience : experiencia }} />
         <Subtitle upper bolder mt>
-          EDUCATION OR OTHER SKILLS
+         { idiom ? 'EDUCATION OR OTHER SKILLS': 'Educación u otras habilidades' }
         </Subtitle>
-        <Es6LiteralString dangerouslySetInnerHTML={{ __html: education }} />
+        <Es6LiteralString dangerouslySetInnerHTML={{ __html: idiom ? education : educacion }} />
         <Subtitle upper bolder mt>
-          LIBRARIES OR TECHNOLOGIES
+         { idiom ? 'LIBRARIES OR TECHNOLOGIES':'Tecnologías' }
         </Subtitle>
-        <Es6LiteralString dangerouslySetInnerHTML={{ __html: technologies }} />
+        <Es6LiteralString dangerouslySetInnerHTML={{ __html: idiom ? technologies : tecnologias }} />
         <DownloadSection>
           <Subtitle upper bolder center mt  color='#f1f1f1'>
-            Click button to download PDF file
+             {idiom ? 'Click button to download PDF file' : 'Pulse el botón para descargar PDF'}
           </Subtitle>
           <ButtonsContainer>
-            <DownloadButton onClick={onButtonClick}>Download PDF {width}%</DownloadButton>
-            <CancelButton onClick={CancelhandleClick}>Cancel</CancelButton>
+            <DownloadButton onClick={onButtonClick}>
+             {idiom ? 'Download PDF' : 'Descargar PDF'} {width}%
+            </DownloadButton>
+            <CancelButton onClick={CancelhandleClick}>
+               { idiom ? 'Cancel':'Cancelar'}
+            </CancelButton>
           </ButtonsContainer>
         
         <div 
@@ -145,16 +163,42 @@ const PictureContainer = styled.div`
 const MainPicture = styled.img.attrs({ src: './images/gfouzcoffee.jpg', alt: 'gfouz' })`
   max-width: 100%;
   height: auto;
+  transition: 3s;
   &:hover {
    transform: rotateY(180deg);
-   transition: 1s;
+   transition: 3s;
   }
+`;
+const SpanishFlag = styled.img.attrs({ src: './images/spain.jpg', alt:'spainflag'})`
+  max-width: 100%;
+  height: 30px;
+`;
+const UnitedKindomFlag = styled.img.attrs({ src: './images/uk.jpg', alt: 'ukflag'})`
+  max-width: 100%;
+  height: 30px;
 `;
 const SummaryList = styled.ol`
   padding: 0 1.5em;
   display: flex;
   text-align: left;
   flex-direction: column;
+`;
+const IdiomButtonContainer = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 0 0.5em;
+`;
+const IdiomButton = styled.button`
+  height: 30px;
+  border: none;
+  outline: none;
+  &:hover {
+    filter: drop-shadow(0 0 2em #222222);
+  }
+`;
+const ButtonTag = styled.h3`
+  font-weight: bolder;
+  margin: 0 1em;
 `;
 const DownloadSection = styled.div`
  padding: 1em 0;
@@ -167,9 +211,11 @@ const ButtonsContainer = styled.div`
   align-items: center;
 `;
 const DownloadButton = styled(OneButton)`
+   margin: 0;
    background-color: #06ade5;
 `;
 const CancelButton = styled(OneButton)`
+  margin: 0;
   color: #f1f1f1;
   background-color: #99999950;
 `;

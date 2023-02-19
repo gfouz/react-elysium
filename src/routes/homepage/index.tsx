@@ -10,6 +10,7 @@ import Sidebar from 'components/Sidebar';
 import Button from 'components/Button';
 import { Headline } from 'components/Headline';
 import Typewriter from 'components/Typewriter';
+import ExpandingBar from 'components/ExpandingBar';
 
 import SpyGlass from 'icons/SpyGlass';
 import GitAlt from 'icons/GitAlt';
@@ -31,6 +32,7 @@ export default function Homepage() {
       <HomepageMain>
         <PictureContainer>
           <MainPicture />
+          <ExpandingBar />
         </PictureContainer>
         <Headline size='1.3em' center color='#451a23' bolder spacing='5px' fontfam='signika' p='2em 0 0 0'>
             <Typewriter color='#451a23' text='Fullstack development with NodeJs' />
@@ -57,7 +59,6 @@ export default function Homepage() {
       </HomepageMain>
 
       <Aside bg='#d3bb72'>
-       
         <ProfileCard>
           <Headline upper>Overview</Headline>
           <p> {attached_1} </p>
@@ -82,6 +83,7 @@ export default function Homepage() {
             <GitAlt fontSize='30px' color='#222222' />
           </GithubLink>
         </RemoteLinks>
+        
       </Aside>
       <Sidebar options={Routes} />
       <Footer bg='#2a160f' color='#c2c5aa'>
@@ -192,17 +194,8 @@ const SelfReminder = styled.div`
   font-weight: bolder;
   font-family: signika;
 `;
-/*const Line = styled.div`
-  width: 100%;
-  height: 1px;
-  background-color: #222222;
-`;
- <Document file={samplePDF}>
-          <Page pageNumber={1} />
- </Document>
-*/
-//https://gfouz.github.io/next-blog-2023
-//https://github.blog/changelog/2022-09-22-github-actions-all-actions-will-begin-running-on-node16-instead-of-node12/
 
 
-//https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/
+
+//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 
+//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
